@@ -28,32 +28,33 @@
 </head>
 <body class="text-slate-100 min-h-screen flex flex-col justify-between selection:bg-[#fff200] selection:text-black pb-32">
 <div id="home-screen" class="p-6 max-w-4xl mx-auto space-y-10">
-    <header class="relative text-center pt-10">
-        <div class="absolute inset-0 flex justify-center opacity-10">
-            <h1 class="text-[120px] font-black italic tracking-tighter text-white">STAGE</h1>
-        </div>
-        <h1 class="text-5xl font-black italic font-title text-white relative z-10">MAZARETE <span class="text-race-yellow">TEAM</span></h1>
-        <p class="text-zinc-400 font-medium mt-2 tracking-widest uppercase text-sm">Pirineos 2026 • Desafío de Altura</p>
-    </header>
+        <header class="relative text-center pt-10">
+            <h1 class="text-5xl font-black italic font-title text-white relative z-10">MAZARETE <span class="text-race-yellow">TEAM</span></h1>
+            <p class="text-zinc-400 font-medium mt-2 tracking-widest uppercase text-sm">Pirineos 2026 • Desafío de Altura</p>
+        </header>
 
-    <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-        <div class="bg-[#141414] p-4 rounded-2xl border border-zinc-800 text-center"><p class="text-[10px] text-zinc-500 uppercase font-bold">Desnivel</p><p class="text-lg font-black text-race-yellow">12.400m</p></div>
-        <div class="bg-[#141414] p-4 rounded-2xl border border-zinc-800 text-center"><p class="text-[10px] text-zinc-500 uppercase font-bold">Distancia</p><p class="text-lg font-black text-race-yellow">480km</p></div>
-        <div class="bg-[#141414] p-4 rounded-2xl border border-zinc-800 text-center"><p class="text-[10px] text-zinc-500 uppercase font-bold">Puertos</p><p class="text-lg font-black text-race-yellow">18</p></div>
-        <div class="bg-[#141414] p-4 rounded-2xl border border-zinc-800 text-center"><p class="text-[10px] text-zinc-500 uppercase font-bold">Días</p><p class="text-lg font-black text-race-yellow">4</p></div>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+            <div class="bg-[#141414] p-4 rounded-2xl border border-zinc-800 text-center"><p class="text-[10px] text-zinc-500 uppercase font-bold">Desnivel</p><p class="text-lg font-black text-race-yellow">12.400m</p></div>
+            <div class="bg-[#141414] p-4 rounded-2xl border border-zinc-800 text-center"><p class="text-[10px] text-zinc-500 uppercase font-bold">Distancia</p><p class="text-lg font-black text-race-yellow">480km</p></div>
+            <div class="bg-[#141414] p-4 rounded-2xl border border-zinc-800 text-center"><p class="text-[10px] text-zinc-500 uppercase font-bold">Puertos</p><p class="text-lg font-black text-race-yellow">18</p></div>
+            <div class="bg-[#141414] p-4 rounded-2xl border border-zinc-800 text-center"><p class="text-[10px] text-zinc-500 uppercase font-bold">Días</p><p class="text-lg font-black text-race-yellow">4</p></div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <button onclick="navTo(0)" class="group bg-[#141414] p-3 rounded-2xl border border-zinc-800 hover:border-race-yellow transition-all text-left flex gap-4">
+                <img src="image1.png" class="w-24 h-24 object-cover rounded-xl"><div class="self-center"><p class="text-race-yellow text-[10px] font-bold uppercase">Etapa 1</p><h3 class="font-black text-lg">LOS CIRCOS</h3></div>
+            </button>
+            <button onclick="navTo(1)" class="group bg-[#141414] p-3 rounded-2xl border border-zinc-800 hover:border-race-yellow transition-all text-left flex gap-4">
+                <img src="image10.png" class="w-24 h-24 object-cover rounded-xl"><div class="self-center"><p class="text-race-yellow text-[10px] font-bold uppercase">Etapa 2</p><h3 class="font-black text-lg">ALTAR MUNDIAL</h3></div>
+            </button>
+            <button onclick="navTo(2)" class="group bg-[#141414] p-3 rounded-2xl border border-zinc-800 hover:border-race-yellow transition-all text-left flex gap-4">
+                <img src="image18.png" class="w-24 h-24 object-cover rounded-xl"><div class="self-center"><p class="text-race-yellow text-[10px] font-bold uppercase">Etapa 3</p><h3 class="font-black text-lg">LA DISCORDIA</h3></div>
+            </button>
+            <button onclick="navTo(3)" class="group bg-[#141414] p-3 rounded-2xl border border-zinc-800 hover:border-race-yellow transition-all text-left flex gap-4">
+                <img src="image21.png" class="w-24 h-24 object-cover rounded-xl"><div class="self-center"><p class="text-race-yellow text-[10px] font-bold uppercase">Etapa 4</p><h3 class="font-black text-lg">FIN DE FIESTA</h3></div>
+            </button>
+        </div>
     </div>
-
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-        <button onclick="navTo(0)" class="group bg-[#141414] p-3 rounded-2xl border border-zinc-800 hover:border-race-yellow transition-all text-left flex gap-4">
-            <img src="image1.png" class="w-24 h-24 object-cover rounded-xl">
-            <div>
-                <p class="text-race-yellow text-[10px] font-bold uppercase">Etapa 1</p>
-                <h3 class="font-black text-lg">LOS CIRCOS</h3>
-                <p class="text-xs text-zinc-400">120km • 3.200m+</p>
-            </div>
-        </button>
-        </div>
-</div>
     <div id="main-content" class="hidden">
     <!-- HERO HEADER GENERAL -->
     <header class="relative overflow-hidden bg-[#141414] border-b border-zinc-800 py-10 px-4 md:px-8">
