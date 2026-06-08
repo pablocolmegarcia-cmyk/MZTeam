@@ -37,30 +37,34 @@
                     <img src="image10.png" class="w-full h-32 object-cover rounded mb-4">
                     <h3 class="font-black">DÍA 2: EL ALTAR</h3>
                 </button>
-                </div>
+                <button onclick="navTo(3)" class="bg-[#141414] border border-zinc-800 p-4 rounded-2xl hover:border-race-yellow transition-all text-left">
+                    <img src="image18.png" class="w-full h-32 object-cover rounded mb-4">
+                    <h3 class="font-black">DÍA 3: LA DISCORDIA</h3>
+                </button>
+                <button onclick="navTo(4)" class="bg-[#141414] border border-zinc-800 p-4 rounded-2xl hover:border-race-yellow transition-all text-left">
+                    <img src="image25.png" class="w-full h-32 object-cover rounded mb-4 rotate-90">
+                    <h3 class="font-black">DÍA 4: FIN DE FIESTA</h3>
+                </button>
+            </div>
         </section>
 
-        <div id="page-1" class="hidden space-y-8">
-            <button onclick="navTo(0)" class="text-race-yellow font-bold underline">← Volver al inicio</button>
-            <h2 class="text-3xl font-black">DÍA 1: LOS CIRCOS</h2>
-            </div>
-
-        <div id="page-2" class="hidden space-y-8">
-            <button onclick="navTo(0)" class="text-race-yellow font-bold underline">← Volver al inicio</button>
-            <h2 class="text-3xl font-black">DÍA 2: EL ALTAR</h2>
-            </div>
+        <div id="page-1" class="hidden space-y-8"><button onclick="navTo(0)" class="text-race-yellow font-bold underline">← Volver al inicio</button><h2 class="text-3xl font-black">DÍA 1: LOS CIRCOS</h2></div>
+        <div id="page-2" class="hidden space-y-8"><button onclick="navTo(0)" class="text-race-yellow font-bold underline">← Volver al inicio</button><h2 class="text-3xl font-black">DÍA 2: EL ALTAR</h2></div>
+        <div id="page-3" class="hidden space-y-8"><button onclick="navTo(0)" class="text-race-yellow font-bold underline">← Volver al inicio</button><h2 class="text-3xl font-black">DÍA 3: LA DISCORDIA</h2></div>
+        <div id="page-4" class="hidden space-y-8"><button onclick="navTo(0)" class="text-race-yellow font-bold underline">← Volver al inicio</button><h2 class="text-3xl font-black">DÍA 4: FIN DE FIESTA</h2><img src="image25.png" class="w-full rounded-xl rotate-90"></div>
     </main>
+
+    <div id="lightbox" class="hidden fixed inset-0 bg-black/90 z-50 flex items-center justify-center p-4" onclick="closeLightbox()">
+        <img id="lightbox-img" class="max-w-full max-h-full object-contain">
+    </div>
 
     <script>
         lucide.createIcons();
 
         function navTo(pageNumber) {
             const sections = ['home', 'page-1', 'page-2', 'page-3', 'page-4'];
-            
             sections.forEach((id, index) => {
                 const el = document.getElementById(id);
-                if (!el) return;
-                
                 if (index === pageNumber) {
                     el.classList.remove('hidden');
                     el.classList.add('block');
@@ -70,6 +74,14 @@
                 }
             });
             window.scrollTo(0, 0);
+        }
+
+        function openLightbox(src) {
+            document.getElementById('lightbox-img').src = src;
+            document.getElementById('lightbox').classList.remove('hidden');
+        }
+        function closeLightbox() {
+            document.getElementById('lightbox').classList.add('hidden');
         }
     </script>
 </body>
