@@ -65,7 +65,46 @@
 
     <!-- CUERPO PRINCIPAL DE LAS ETAPAS -->
     <main class="max-w-4xl w-full mx-auto px-4 md:px-6 mt-8 flex-grow">
+<section id="home" class="space-y-8 block">
+    <div class="text-center mb-10">
+        <h2 class="text-3xl font-black text-white font-title italic">STAGE PIRINEOS 2026</h2>
+        <p class="text-zinc-500 font-bold uppercase tracking-widest text-xs mt-2">Selecciona la etapa para visualizar detalles</p>
+    </div>
 
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <button onclick="navTo(1)" class="bg-[#141414] border border-zinc-800 p-4 rounded-2xl hover:border-race-yellow transition-all text-left group">
+            <div class="h-32 bg-black rounded-lg overflow-hidden mb-4 border border-zinc-900">
+                <img src="image1.png" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition">
+            </div>
+            <h3 class="text-lg font-black text-white group-hover:text-race-yellow">DÍA 1: LOS CIRCOS</h3>
+            <p class="text-xs text-zinc-400 mt-1">116 km • 3.594 m D+ • 3 Puertos</p>
+        </button>
+
+        <button onclick="navTo(2)" class="bg-[#141414] border border-zinc-800 p-4 rounded-2xl hover:border-race-yellow transition-all text-left group">
+            <div class="h-32 bg-black rounded-lg overflow-hidden mb-4 border border-zinc-900">
+                <img src="image10.png" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition">
+            </div>
+            <h3 class="text-lg font-black text-white group-hover:text-race-yellow">DÍA 2: EL ALTAR</h3>
+            <p class="text-xs text-zinc-400 mt-1">49 km • 1.748 m D+ • 1 Puerto</p>
+        </button>
+
+        <button onclick="navTo(3)" class="bg-[#141414] border border-zinc-800 p-4 rounded-2xl hover:border-race-yellow transition-all text-left group">
+            <div class="h-32 bg-black rounded-lg overflow-hidden mb-4 border border-zinc-900">
+                <img src="image18.png" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition">
+            </div>
+            <h3 class="text-lg font-black text-white group-hover:text-race-yellow">DÍA 3: LA DISCORDIA</h3>
+            <p class="text-xs text-zinc-400 mt-1">Hasta 163 km • 4.428 m D+ • 4 Puertos</p>
+        </button>
+
+        <button onclick="navTo(4)" class="bg-[#141414] border border-zinc-800 p-4 rounded-2xl hover:border-race-yellow transition-all text-left group">
+            <div class="h-32 bg-black rounded-lg overflow-hidden mb-4 border border-zinc-900">
+                <img src="image21.png" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition">
+            </div>
+            <h3 class="text-lg font-black text-white group-hover:text-race-yellow">DÍA 4: FIN DE FIESTA</h3>
+            <p class="text-xs text-zinc-400 mt-1">90 km • 2.413 m D+ • 3 Puertos</p>
+        </button>
+    </div>
+</section>
         <!-- ================= DÍA 1: LOS CIRCOS (Sábado 20 Junio) ================= -->
         <div id="page-1" class="space-y-8 block">
             
